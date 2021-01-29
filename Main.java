@@ -5,12 +5,12 @@ class Main {
   {
     Scanner scan = new Scanner(System.in);
 
-    System.out.println("what school do you got to?");
+    System.out.println("what school do you go to?");
     String name = scan.next();
     System.out.println("what year are whe in right now?");
     int currentYear = scan.nextInt();
     System.out.println("when is your birthday?");
-    int birthyear = scan.next();
+    int birthYear = scan.nextInt();
   
     int age = getAge(birthYear, currentYear);
     System.out.println("this is your age for this current year." + age);
