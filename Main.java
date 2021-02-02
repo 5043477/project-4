@@ -1,19 +1,23 @@
+//imput your package for your scanner here
 import java.util.Scanner;
 
-class Main {
+//then put your class name
+public class Main {
   public static void main(String[] args) 
   {
+    //here put scanner 
     Scanner scan = new Scanner(System.in);
-
+//create your values here
     System.out.println("what school do you go to?");
-    String name = scan.next();
+    String school = scan.next();
     System.out.println("what year are whe in right now?");
     int currentYear = scan.nextInt();
-    System.out.println("when is your birthday?");
+    System.out.println("what year were you born in? ");
     int birthYear = scan.nextInt();
-  
+  //print your message here
     int age = getAge(birthYear, currentYear);
-    System.out.println("this is your age for this current year." + age);
+    System.out.println("this is your age " + age + " for the current year" + "and you go to school at " + school);
+    
   }
 
 //getAge method calculates getAge
@@ -23,10 +27,10 @@ int age = currentYear - birthYear;
 return age;
  }
 
- //greeting method returns a personalized greeting
- static String greeting(String name)
+ //school method 
+ static String greeting(String school)
  {
-  String hello = "hello. welcome back, " + name;
+  String hello = "your school name is " + school;
   return hello;
  }
 }
